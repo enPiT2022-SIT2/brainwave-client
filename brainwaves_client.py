@@ -45,7 +45,7 @@ def main():
         # 接続に失敗したらプログラムを終了する
         sys.exit()
     while True:
-        client.sendall(np.array([args.id, 1, 1, args.sleep]))
+        client.sendall(np.array([args.id, 1, 1, args.sleep],dtype=np.float64))
         # 1s待機
         time.sleep(1)
 
